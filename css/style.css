@@ -369,7 +369,7 @@ h6 {
   fill: #f4f4fd;
 }
 
-. @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
@@ -555,7 +555,7 @@ h6 {
 }
 
 .check-element {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -615,4 +615,12 @@ h6 {
 .check-text {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 16px 24px 16px;
+  }
 }
