@@ -748,7 +748,7 @@ h6 {
 
 .solutions-section-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   row-gap: 72px;
 }
 
@@ -765,7 +765,6 @@ h6 {
 @media screen and (min-width: 768px) {
   .solutions-section-list {
     flex-direction: row;
-    flex-wrap: wrap;
     column-gap: 24px;
   }
 
@@ -835,9 +834,8 @@ h6 {
 
 .team-section-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   row-gap: 72px;
-  padding-left: 0;
 }
 
 .team-section-item {
@@ -876,6 +874,7 @@ h6 {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
+  width: 232px;
 }
 
 .team-icon-link {
@@ -907,16 +906,20 @@ h6 {
 
   .team-section-list {
     flex-direction: row;
-    flex-wrap: wrap;
     column-gap: 24px;
   }
 
   .team-section-item {
-    width: calc((100% - 24px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
+  .team-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .team-section-list {
     flex-wrap: nowrap;
   }
