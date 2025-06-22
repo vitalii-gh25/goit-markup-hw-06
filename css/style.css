@@ -781,7 +781,10 @@ h6 {
 }
 
 @media screen and (min-width: 1158px) {
-  .solutions-section {
+  .solutions-section,
+  .team-section,
+  .portfolio-section,
+  .footer {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -929,6 +932,8 @@ h6 {
   }
 }
 
+/* portfolio */
+
 .portfolio-section-title {
   text-transform: capitalize;
   font-weight: 700;
@@ -1038,5 +1043,226 @@ h6 {
 
   .portfolio-section-item {
     width: calc((100% - 24px * 2) / 3);
+  }
+}
+
+/* footer */
+
+.footer {
+  background: #2e2f42;
+}
+
+.footer-logo-link-blue {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: block;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer-logo-link-white {
+  color: #f4f4fd;
+}
+
+.footer-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 288px;
+}
+
+.footer-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+}
+
+.footer-main-box {
+}
+
+.footer-icon-box {
+  width: 208px;
+  height: 80px;
+  margin-left: 40px;
+}
+
+.footer-icon-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% - 16px * 3) / 4);
+}
+
+.footer-icon-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.footer a:hover,
+.footer a:focus {
+  background-color: #31d0aa;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #f4f4fd;
+}
+
+.footer-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-form-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-form-input {
+  width: 288px;
+  height: 40px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #fff;
+}
+
+.footer-form-input::placeholder {
+  color: #fff;
+}
+
+.footer-form-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.footer-button-icon {
+  margin-left: 16px;
+  fill: #fff;
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+  background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 108px;
+  }
+  .footer-wraper {
+    column-gap: 24px;
+  }
+  .footer-logo-link-blue {
+    text-align: left;
+  }
+
+  .footer-icon-box {
+    text-align-last: left;
+    margin-left: 0;
+  }
+
+  .footer-main-box {
+    width: 264px;
+  }
+  .footer-form-container {
+    align-items: flex-start;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-wraper {
+    gap: 0;
+  }
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-main-box {
+    margin-right: 120px;
+    gap: unset;
+  }
+
+  .footer-icon-box {
+    margin-right: 80px;
+  }
+
+  .footer-form-container {
+    justify-content: start;
+  }
+
+  .footer-form-button {
   }
 }
