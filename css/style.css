@@ -735,6 +735,8 @@ h6 {
   }
 } */
 
+/* solutions */
+
 .solutions-icon-bg {
   display: none;
 }
@@ -746,7 +748,7 @@ h6 {
 
 .solutions-section-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   row-gap: 72px;
 }
 
@@ -762,16 +764,18 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .solutions-section-list {
+    flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 24px;
   }
-}
 
-.solutions-section-item {
-  width: calc((100% - 24px) / 2);
-}
+  .solutions-section-item {
+    width: calc((100% - 24px) / 2);
+  }
 
-.solutions-section-subtitle {
-  text-align: start;
+  .solutions-section-subtitle {
+    justify-content: start;
+  }
 }
 
 @media screen and (min-width: 1158px) {
