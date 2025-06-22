@@ -765,11 +765,12 @@ h6 {
 @media screen and (min-width: 768px) {
   .solutions-section-list {
     flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 24px;
   }
 
   .solutions-section-item {
-    flex-basis: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .solutions-section-subtitle {
@@ -778,6 +779,15 @@ h6 {
 }
 
 @media screen and (min-width: 1158px) {
+  .solutions-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .solutions-section-list {
+    flex-wrap: nowrap;
+  }
+
   .solutions-icon-bg {
     background: #f4f4fd;
     border: 1px solid #8e8f99;
@@ -792,15 +802,6 @@ h6 {
 
   .solutions-icon {
     fill: #2e2f42;
-  }
-
-  .solutions-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  .solutions-section-item {
-    flex-basis: calc((100% - 24px * 3) / 4);
   }
 
   .solutions-section-subtitle {
@@ -836,6 +837,7 @@ h6 {
   display: flex;
   flex-direction: column;
   row-gap: 72px;
+  padding-left: 0;
 }
 
 .team-section-item {
@@ -920,6 +922,5 @@ h6 {
   }
 
   .team-section-item {
-    width: calc((100% - 24px * 3) / 4);
   }
 }
