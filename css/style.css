@@ -1280,3 +1280,7 @@ h6 {
   .footer-form-button {
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

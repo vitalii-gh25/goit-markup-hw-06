@@ -34,7 +34,7 @@
               <a class="header-menu-link" href="">Portfolio</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="">Contacts</a>
+              <a class="header-menu-link" href="#footer-section">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -52,15 +52,15 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="mobile-menu-container">
-          <button type="button" class="modal-close">
+          <button type="button" class="modal-close" data-menu-close>
             <svg class="modal-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-cross"></use>
             </svg>
@@ -136,7 +136,7 @@
           <h1 class="hero-section-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="hero-section-button btn" type="button">
+          <button class="hero-section-button btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -658,7 +658,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer-section">
       <div class="container footer-wraper">
         <div class="footer-main-box">
           <a class="footer-logo-link-blue" href="./index.html"
@@ -722,9 +722,9 @@
         </div>
       </div>
     </footer>
-    <div class="overlay">
+    <div class="overlay" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
@@ -804,5 +804,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
